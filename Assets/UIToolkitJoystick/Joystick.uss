@@ -1,0 +1,17 @@
+#JoystickOuterBorder{
+    display:none;
+    border-width:3px;
+    border-color: white;
+    border-radius: 100%;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#JoystickKnob{
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    background-color: white;
+    border-radius: 100%;
+}
