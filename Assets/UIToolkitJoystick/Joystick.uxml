@@ -1,5 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="JoystickOuterBorder">
-        <ui:VisualElement name="JoystickKnob" />
+    <ui:VisualElement name="JoystickTouchArea">
+        <ui:VisualElement name="JoystickOuterBorder">
+            <ui:VisualElement name="JoystickKnob" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

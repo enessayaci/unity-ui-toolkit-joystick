@@ -25,6 +25,7 @@ public class JoystickController : MonoBehaviour
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
         VisualElement joystickUI = joystickUXML.Instantiate();
+        VisualElement joystickTouchArea = joystickUI.Q<VisualElement>("JoystickTouchArea");
         joystickElement = joystickUI.Q("JoystickOuterBorder"); // There is a parent node named "JoystickOuterBorder" in Joystick.uxml file, just leave it as it is, you will need this variable to show/hide joystick later
         joystickKnob = joystickElement.Q("JoystickKnob"); // There is a child node named "JoystickKnob" in Joystick.uxml file, just leave it as it is, you will need this variable to move the little circle on the middle of the joystick later
 
@@ -34,24 +35,24 @@ public class JoystickController : MonoBehaviour
         joystickKnob.style.transformOrigin = new TransformOrigin(Length.Percent(100), 0, 0);
 
         root.styleSheets.Add(joystickUSS); // add joystick uss file to root, it is needed to apply joystick styles
-        root.Add(joystickElement); // add joystick node to root
+        root.Insert(0, joystickTouchArea); // add joystick touchable node to root
 
-        root.RegisterCallback<PointerDownEvent>((ev) =>
+        joystickTouchArea.RegisterCallback<PointerDownEvent>((ev) =>
         {
             ShowJoystick(ev);
         });
 
-        root.RegisterCallback<PointerMoveEvent>((ev) =>
+        joystickTouchArea.RegisterCallback<PointerMoveEvent>((ev) =>
         {
             UpdateJoystick(ev);
         });
 
-        root.RegisterCallback<PointerUpEvent>((ev) =>
+        joystickTouchArea.RegisterCallback<PointerUpEvent>((ev) =>
         {
             HideJoystick(ev);
         });
 
-        root.RegisterCallback<PointerLeaveEvent>((ev) =>
+        joystickTouchArea.RegisterCallback<PointerLeaveEvent>((ev) =>
         {
             HideJoystick(ev);
         });

@@ -712,5 +712,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a80621c366c417c9a54ded0ec57368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystickUXML: {fileID: 9197481963319205126, guid: d8e23afdb00a34f438011020e2184efe, type: 3}
-  joystickUSS: {fileID: 7433441132597879392, guid: 6d29f8937cfe94510b5d6b78601378bd, type: 3}
+  joystickUXML: {fileID: 9197481963319205126, guid: 8d2f9fea0e827482c80777a4279f1c97, type: 3}
+  joystickUSS: {fileID: 7433441132597879392, guid: 542ade93c93ca41f799c70ce7dabbe0c, type: 3}

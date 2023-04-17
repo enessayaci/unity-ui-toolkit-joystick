@@ -1,3 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1;" />
+    <ui:VisualElement name="Everything" picking-mode="Ignore" style="flex-grow: 1; padding-left: 5px; padding-right: 5px; padding-top: 50px; padding-bottom: 0;">
+        <ui:VisualElement name="TopBar" style="flex-direction: row;">
+            <ui:Label text="Username" display-tooltip-when-elided="true" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 22px;" />
+            <ui:Label text="Coins: 100" display-tooltip-when-elided="true" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 22px; margin-left: auto;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Body" picking-mode="Ignore" style="padding-top: 20px;">
+            <ui:Button text="Floating Button" display-tooltip-when-elided="true" style="width: 100px; height: 50px; background-color: rgb(0, 152, 255); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            <ui:Button text="Floating Button" display-tooltip-when-elided="true" style="width: 100px; height: 50px; background-color: rgb(255, 84, 0); margin-left: 0; margin-right: 0; margin-top: 10px; margin-bottom: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>
