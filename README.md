@@ -6,7 +6,7 @@ UI Toolkit based floating joystick for unity mobile games 🕹️
 # Usage
 
 <ol>
-    <li>Open the scene, create e new UI Document object by Right Click > UI Toolkit > UI Document </li>
+    <li>Open the scene, create a new UI Document object by Right Click > UI Toolkit > UI Document </li>
     <li>Select Panel Settings and Source Asset (uxml file) of UIDocument component on the inspector (Demo Panel Settings and Demo.uxml for my case)</li>
     <li>Attach JoystickController.cs to the UI Document object. This script will create an element named "JoystickTouchArea" and place in root to handle joystick pointer events.</li>
     <li>Be sure that picking-mode properties of your UI Toolkit element's is properly set to use floating buttons which are clickable as joystick working at the same time.</li>
