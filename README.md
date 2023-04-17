@@ -13,7 +13,7 @@ UI Toolkit based floating joystick for unity mobile games 🕹️
     
 </ol>
 
- Note: The VisualElement "JoystickTouchArea" will be placed at beggining of nodes so it will be rendered at backward, so you must be careful adjusting picking modes the elements over JoystickTouchArea (every element will be over it anyway because it is rendered by root.Insert(0, JoystickTouchArea))
+ Note: The VisualElement "JoystickTouchArea" will be placed at beggining of nodes so it will be rendered at backmost layer, so you must be careful adjusting picking modes the elements over JoystickTouchArea (every element will be over it anyway because it is rendered by root.Insert(0, JoystickTouchArea))
     
 <img src="https://raw.githubusercontent.com/enessayaci/unity-ui-toolkit-joystick/main/Assets/Public/everything.png" width="300"> <img src="https://raw.githubusercontent.com/enessayaci/unity-ui-toolkit-joystick/main/Assets/Public/body.png" width="300"> <img src="https://raw.githubusercontent.com/enessayaci/unity-ui-toolkit-joystick/main/Assets/Public/floating_button.png" width="300">
 
